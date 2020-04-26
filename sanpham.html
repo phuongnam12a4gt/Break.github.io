@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>radom password break</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="script.js"></script>
+  <style>
+    .content{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: aliceblue;
+      padding: 20px;
+      width: 100%;
+    }
+    #display{
+      width: 100%;
+    }
+    #slider{
+      width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-8 col-sm-12 mx-auto">
+      <div class="content" >
+        <h4> password ganerate</h4>
+        <br />
+        <input type="text" id="display">
+        <br />
+        <input type="range" min="0" max="50" name="slider" id="slider">
+        <br />
+        <button onclick="generate()" >generate</button>
+        <button onclick=""> copy to clipboard</button>
+      </div>
+      <div class="previous_password">
+        <b>Previously generated password</b>
+        <br />
+        <div id="lastNums"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
